@@ -1,0 +1,7 @@
+*.jar binary binary
+*.zip binary binary
+*.sh ISO8859-1 IBM-1047
+*.properties ISO8859-1 IBM-1047
+*.cbl ISO8859-1 IBM-1047
+*.cob ISO8859-1 IBM-1047
+*.cpy ISO8859-1 IBM-1047
