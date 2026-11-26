@@ -3,17 +3,10 @@
 set -e
 
 # Convert username to lowercase
-LOWERCASE_USERNAME=$(echo "$ZOWE_USERNAME" | tr '[:upper:]' '[:lower:]')
+LOWERCASE_USERNAME=$(echo "$ZOWE_OPT_USER" | tr '[:upper:]' '[:lower:]')
 USS_DIR="/z/$LOWERCASE_USERNAME/cobolcheck"
 
 # Parâmetros de conexão reutilizáveis para o Zowe CLI
-ZOWE_CONN=(
-  --host "$ZOWE_HOST"
-  --port "$ZOWE_PORT"
-  --user "$ZOWE_USERNAME"
-  --password "$ZOWE_PASSWORD"
-  --reject-unauthorized false
-)
 
 # Check if directory exists, create if it doesn't
 if ! zowe zos-files list uss-files "$USS_DIR" "${ZOWE_CONN[@]}" &>/dev/null; then
