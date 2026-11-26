@@ -1,9 +1,6 @@
 #!/bin/bash
 # zowe_operations.sh
 .github and 
-scripts folders if they
-260924-1126
-[24/44]
 # Convert username to lowercase
 LOWERCASE_USERNAME=$(echo "$ZOWE_USERNAME" | tr '[:upper:]' '[:lower:]')
 # Check if directory exists, create if it doesn't
