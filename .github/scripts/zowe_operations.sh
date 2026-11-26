@@ -1,6 +1,5 @@
 #!/bin/bash
 # zowe_operations.sh
-.github and 
 # Convert username to lowercase
 LOWERCASE_USERNAME=$(echo "$ZOWE_USERNAME" | tr '[:upper:]' '[:lower:]')
 # Check if directory exists, create if it doesn't
