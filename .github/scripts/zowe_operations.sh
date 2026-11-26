@@ -32,5 +32,4 @@ fi
 # Verify upload
 echo "Verifying upload:"
 zowe zos-files list uss-files "$USS_DIR" "${ZOWE_CONN[@]}"
-zowe zos-files create data-set-partitioned "Z87815.JCL" --alcunit TRK --primary 5 --secondary 5 --dirblk 5 --recfm FB --lrecl 80 --blksize 27920 || true
-zowe zos-files upload file-to-data-set "./caminho/do/seu/arquivo.jcl" "Z87815.JCL(NUMBERSJ)"
+zowe zos-files upload file-to-data-set "./NUMBERS.jcl" "Z87815.JCL(NUMBERSJ)"
