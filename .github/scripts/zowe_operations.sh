@@ -24,10 +24,10 @@ fi
 #  "${ZOWE_CONN[@]}"
 
 # Upload the .jar file explicitly in binary mode so it doesn't get corrupted
-echo "Uploading cobol-check-0.2.9.jar in binary mode..."
-zowe zos-files upload file-to-uss "./cobol-check/cobol-check-0.2.9.jar" "$USS_DIR/cobol-check-0.2.9.jar" \
-  --binary \
-  "${ZOWE_CONN[@]}"
+#echo "Uploading cobol-check-0.2.9.jar in binary mode..."
+#zowe zos-files upload file-to-uss "./cobol-check/cobol-check-0.2.9.jar" "$USS_DIR/cobol-check-0.2.9.jar" \
+#  --binary \
+#  "${ZOWE_CONN[@]}"
 
 # Verify upload
 echo "Verifying upload:"
