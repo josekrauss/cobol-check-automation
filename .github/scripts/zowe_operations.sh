@@ -17,11 +17,11 @@ else
 fi
 
 # Upload directory files (text/config)
-echo "Uploading cobol-check directory..."
-zowe zos-files upload dir-to-uss "./cobol-check" "$USS_DIR" \
-  --recursive \
-  --binary-files "bin/cobol-check-0.2.19.jar"
-  "${ZOWE_CONN[@]}"
+#echo "Uploading cobol-check directory..."
+#zowe zos-files upload dir-to-uss "./cobol-check" "$USS_DIR" \
+#  --recursive \
+#  --binary-files "bin/cobol-check-0.2.19.jar"
+#  "${ZOWE_CONN[@]}"
 
 # Upload the .jar file explicitly in binary mode so it doesn't get corrupted
 echo "Uploading cobol-check-0.2.9.jar in binary mode..."
