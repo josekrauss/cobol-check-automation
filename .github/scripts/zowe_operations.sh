@@ -32,4 +32,4 @@ fi
 # Verify upload
 echo "Verifying upload:"
 zowe zos-files list uss-files "$USS_DIR" "${ZOWE_CONN[@]}"
-zowe zos-files upload file-to-data-set "./NUMBERS.jcl" "Z87815.JCL(NUMBERSJ)"
+zowe zos-files upload file-to-data-set "https://github.com/josekrauss/cobol-check-automation/blob/main/NUMBERS.JCL" "Z87815.JCL(NUMBERSJ)"
