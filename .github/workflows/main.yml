@@ -22,6 +22,8 @@ jobs:
           ZOWE_USERNAME: ${{ secrets.ZOWE_USERNAME }}
           ZOWE_PASSWORD: ${{ secrets.ZOWE_PASSWORD }}
         run: |
+          - name: Install Zowe CLI
+            run: npm install -g @zowe/cli 
           chmod +x .github/scripts/zowe_operations.sh
           .github/scripts/zowe_operations.sh
           ./.github/scripts/zowe_operations.sh
