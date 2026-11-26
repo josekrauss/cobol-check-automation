@@ -1,4 +1,3 @@
-he file editor, let’s add our script:
 #!/bin/bash
 # mainframe_operations.sh
 # Set up environment
@@ -22,8 +21,6 @@ chmod +x linux_gnucobol_run_tests
 echo "Made linux_gnucobol_run_tests executable"
 cd ..
 # Function to run cobolcheck and copy files
-COBOL Programming
-Course #4 3.2.0|
 260924-1126
 [27/44]
 run_cobolcheck() {
@@ -54,8 +51,6 @@ else
 echo "${program}.JCL not found"
 fi
 }
-COBOL Programming
-Course #4 3.2.0|
 260924-1126
 [28/44]
 # Run for each program
