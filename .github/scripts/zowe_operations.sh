@@ -2,8 +2,6 @@
 # zowe_operations.sh
 .github and 
 scripts folders if they
-COBOL Programming
-Course #4 3.2.0|
 260924-1126
 [24/44]
 # Convert username to lowercase
